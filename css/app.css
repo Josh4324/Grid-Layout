@@ -3,8 +3,6 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 34%;
     width:100%;
-    grid-row-gap: -20px;
-    grid-column-gap: 0px;
 }
 
 html,
@@ -31,4 +29,36 @@ section{
     width:100%;
     padding:0px;
     margin:0px;
+}
+
+.caro {
+    position: absolute;
+    width:100%;
+    height:70%;
+    top:100px;
+    border: 1px solid blue;
+    z-index:2;
+}
+
+.prev{
+    position: absolute;
+    font-size:2em;
+    top:50%;
+    right:98%;
+    z-index:12;
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+    font-size:2em;
+    top:50%;
+    left:98%;
+    z-index:12;
+    cursor: pointer;
+}
+
+.caroimage{
+    height:100%;
+    width:100%;
 }
