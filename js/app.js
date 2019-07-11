@@ -5,10 +5,14 @@ let num = 0
 const images = ["Animals/l1.jpg",
                 "Animals/l2.jpg",
                 "Animals/l3.jpg",
-                "Animals/l1.jpg"  
+                "Animals/lionesse-lion-predator-wild-animal-4k-ba-1920x1080.jpg"  
                ]
 
 const image = document.createElement("img");
+image.src=images[num]
+image.classList = "caroimage"
+caro.appendChild(image);
+
 next.addEventListener("click", make1)
 prev.addEventListener("click", make2)
 
@@ -18,29 +22,28 @@ function make1(){
         image.src = images[num];
         image.classList = "caroimage"
         caro.appendChild(image);
-        num++
-        console.log("done")
     }else{
+        num++
         image.src = images[num];
         image.classList = "caroimage"
         caro.appendChild(image);
-        num++
-        console.log("done")
     }
 }
 
 function make2(){
     if (num === 0){
         num = 3
+        num--
         image.src = images[num];
         image.classList = "caroimage"
         caro.appendChild(image);
-        num--
+        
     }else{
+        num--
         image.src = images[num];
         image.classList = "caroimage"
         caro.appendChild(image);
-        num--
+       
     }
        
 }

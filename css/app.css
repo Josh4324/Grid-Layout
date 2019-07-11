@@ -61,4 +61,16 @@ section{
 .caroimage{
     height:100%;
     width:100%;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes slide {
+  0%   {opacity:.4;}
+  25%  {opacity:.7;}
+  50%  {opacity:.8;}
+  100% {opacity:1;}
 }
